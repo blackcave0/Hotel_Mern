@@ -63,7 +63,7 @@ function LoginPage() {
               </div>
 
               <div className="registration-form">
-                <h1 className="main-heading mb-4">Login form</h1>
+                <h1 className="main-heading mb-4">Login form welcome</h1>
                 <br />
                 <form onSubmit={handleSubmit}>
                   <div>
