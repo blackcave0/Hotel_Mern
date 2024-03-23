@@ -37,7 +37,8 @@ export const AuthProvider = ({ children }) => {
       //-- First set true
       setIsLoading(true);
 
-      const response = await fetch(`http://localhost:8000/api/auth/users`, {
+      // removing the http://localhost:8000/
+      const response = await fetch(`api/auth/users`, {
         method: 'GET',
         headers: {
           // Authorization: `Bearer ${token}`,
