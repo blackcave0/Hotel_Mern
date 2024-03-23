@@ -37,8 +37,8 @@ function RegisterPage() {
         },
         body: JSON.stringify(user),
       });
-      const data = await response.json();
-      console.log('res form server : ', data.extraDetails);
+      // const data = await response.json();
+      // console.log('res form server : ', data.extraDetails);
       // console.log(response);
 
       if (response.ok) {
