@@ -38,7 +38,7 @@ export const AuthProvider = ({ children }) => {
       setIsLoading(true);
 
       // removing the http://localhost:8000/
-      const response = await fetch(`api/auth/users`, {
+      const response = await fetch(`https://s2m.netlify.app/api/auth/users`, {
         method: 'GET',
         headers: {
           // Authorization: `Bearer ${token}`,
