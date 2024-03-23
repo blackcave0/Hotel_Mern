@@ -18,7 +18,7 @@ const corsOption = {
   credential : true,
 }
 app.use(cors(corsOption));
-app.use(cors())
+// app.use(cors())
 // -- End of Line -- 
 
 // -- Conver data to json
