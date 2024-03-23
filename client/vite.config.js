@@ -5,6 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server :{
-    hmr : {overlay : false}
-  }
+    hmr : {overlay : false},
+    proxy : {
+      "/api" : {
+        target : 'https://s2m.netlify.app'
+      }
+    }
+  },
 })
