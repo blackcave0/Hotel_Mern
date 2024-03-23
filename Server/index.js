@@ -11,12 +11,14 @@ const adminRoute = require('./Router/admin-router')
 // -- CORS METHOD ---
 const cors = require('cors');
 const corsOption = {
-  origin : 'http://localhost:5173',
+  // origin : 'http://localhost:5173',
+  origin : 'https://s2m.netlify.app/',
   methods : "GET, POST, PUT, DELETE, PATCH, HEAD",
   optionsSuccessStatus: 200,
   credential : true,
 }
 app.use(cors(corsOption));
+app.use(cors())
 // -- End of Line -- 
 
 // -- Conver data to json
